@@ -21,7 +21,7 @@ pipeline{
 
         stage("Deploy Prod"){
             when {
-                branch 'master'
+                branch 'main'
             }
             steps{
                 echo "Deploying to Prod environment"
